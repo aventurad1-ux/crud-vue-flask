@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entorno virtual
+backend/.venv/
+.venv/
+
+# Variables de entorno
+.env
+backend/.env
+frontend/.env
+
+# Base de datos local
+*.db
+backend/instance/*.db
+
+# Node / Vue
+frontend/node_modules/
+node_modules/
+frontend/dist/
+
+# VS Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
