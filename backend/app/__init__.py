@@ -42,6 +42,13 @@ def create_app(test_config=None):
         },
     )
 
+    from .api import api_bp
+    
+    app.register_blueprint(
+        api_bp,
+        url_prefix="/api",
+    )
+
     @app.get("/health")
     def health_check():
         return {"status": "ok"}
