@@ -28,6 +28,8 @@ def create_app(test_config=None):
     db.init_app(app)
     migrate.init_app(app, db)
 
+    from . import models  # noqa: F401
+
     cors.init_app(
         app,
         resources={
